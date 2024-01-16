@@ -129,8 +129,43 @@ header {}
     gap: 10px;
     color: #FFFFFF;
 }
-
-
+/* ======== Our Popular Tours section design start ======== */
+.our-popular-section {
+    gap: 55px;
+    display: flex;
+    margin: 100px 0;
+    justify-content: space-between;
+  }
+  
+  .section-title {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  
+  .left-side p {
+    margin: 24px 0;
+  }
+  
+  .left-side ul li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    color: rgba(19, 19, 24, 0.7);
+  }
+  .primary-btn {
+    outline: 0;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 36px;
+    border-radius: 8px;
+    transition: all 0.2s;
+    background: #ff5400;}
 
 
 /* Mobile Screen style */
@@ -200,5 +235,10 @@ header {}
     }
     .header-banner-container {
         padding: 32px;
+    }
+    .our-popular-section{
+        gap: 22px;
+    padding: 40px;
+    flex-direction: column;
     }
 }
