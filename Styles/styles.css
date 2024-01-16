@@ -1,15 +1,19 @@
 /* Shared style */
 * {
-    font-family: 'Mulish', sans-serif;
+    body {
+        margin: 0 150px;
+
+    }
+
+    font-family: 'Mulish',
+    sans-serif;
 
     .text-span-color {
         color: #FF5400;
     }
 }
 
-header {
-    margin: 0px 135px;
-}
+header {}
 
 /* header style */
 .nav-container {
@@ -24,8 +28,8 @@ header {
 }
 
 .logo-img {
-    width: 60px;
-    height: 50px;
+    width: 48px;
+
 
 }
 
@@ -56,22 +60,88 @@ header {
     font-weight: 400;
 }
 
-.menu-bar img {
-    width: 24px;
-    height: 24px;
-
-}
-
 .menu-bar {
     display: none;
 }
 
+
+/* header-banner style */
+
+.header-banner {
+    background-image: linear-gradient(#131318, #13131800), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    width: 1170px;
+
+    border-radius: 16px;
+    color: #FFF;
+    text-align: center;
+}
+
+.header-banner-container {
+    padding: 106px 0;
+}
+
+.banner-heading h3 {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 64px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.banner-heading p {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    gap: 24px;
+    margin: 0 185px;
+
+}
+
+.select-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 174px;
+    border-radius: 8px;
+    background: white;
+    padding: 5px;
+    gap: 50px;
+    color: black;
+}
+
+.search {
+    background: #FF5400;
+    justify-content: center;
+    gap: 10px;
+    color: #FFFFFF;
+}
 
 
 
 
 /* Mobile Screen style */
 @media only screen and (max-width: 600px) {
+    * {
+        body {
+            margin: 0;
+
+        }
+    }
+
     .nav-list {
         display: none;
     }
@@ -81,13 +151,54 @@ header {
     }
 
     .logo-img {
-        width: 35px;
-        height: 33px;
+        width: 28px;
     }
-    .logo-text{
+
+    .logo-text {
         font-size: 21.543px;
         margin-left: 10px;
     }
 
+    .header-banner,
+    nav {
+        width: 335px;
+    
 
+    }
+
+    .banner-heading h3 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .banner-heading p {
+    
+        font-size: 14px;
+
+    }
+
+    .select-container {
+        flex-direction: column;
+        /* padding: 16px; */
+        gap: 10px;
+        margin: 0;
+
+    }
+
+    .banner-heading h3 {
+        margin: 0;
+        
+    }
+    .banner-heading p{
+        margin-top:8px;
+        margin-bottom: 32px;
+    }
+
+    .select-card {
+        width: 225px;
+        height: 52px;
+    }
+    .header-banner-container {
+        padding: 32px;
+    }
 }
