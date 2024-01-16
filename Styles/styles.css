@@ -1,19 +1,16 @@
 /* Shared style */
 * {
     body {
-        margin: 0 150px;
+        margin: 0;
+        font-family: 'Mulish',
+            sans-serif;
 
     }
-
-    font-family: 'Mulish',
-    sans-serif;
 
     .text-span-color {
         color: #FF5400;
     }
 }
-
-header {}
 
 /* header style */
 .nav-container {
@@ -25,22 +22,14 @@ header {}
 .nav-logo {
     display: flex;
     align-items: center;
-}
-
-.logo-img {
-    width: 48px;
-
-
+    gap: 16px;
 }
 
 .logo-text {
-    margin-left: 16px;
     color: #131318;
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 800;
 }
-
-
 
 .nav-list ul {
     display: flex;
@@ -64,16 +53,14 @@ header {}
     display: none;
 }
 
-
 /* header-banner style */
 
 .header-banner {
     background-image: linear-gradient(#131318, #13131800), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
     background-repeat: no-repeat;
-    width: 1170px;
-
+    width: 100%;
+    background-size: cover;
     border-radius: 16px;
-    color: #FFF;
     text-align: center;
 }
 
@@ -84,9 +71,10 @@ header {}
 .banner-heading h3 {
     color: #FFF;
     font-family: Mulish;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 800;
     margin: 0;
+
 }
 
 .banner-heading p {
@@ -94,7 +82,7 @@ header {}
     margin-bottom: 48px;
     color: #FFF;
     font-family: Mulish;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 
 }
@@ -107,7 +95,7 @@ header {}
     background: rgba(255, 255, 255, 0.30);
     padding: 16px;
     gap: 24px;
-    margin: 0 185px;
+    margin: 0 135px;
 
 }
 
@@ -118,7 +106,7 @@ header {}
     width: 174px;
     border-radius: 8px;
     background: white;
-    padding: 5px;
+    padding: 16px;
     gap: 50px;
     color: black;
 }
@@ -129,52 +117,47 @@ header {}
     gap: 10px;
     color: #FFFFFF;
 }
+
 /* ======== Our Popular Tours section design start ======== */
 .our-popular-section {
-    gap: 55px;
+
     display: flex;
-    margin: 100px 0;
     justify-content: space-between;
-  }
-  
-  .section-title {
+    gap: 5px;
+    margin: 100px 0;
+}
+
+.section-title {
     color: #131318;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 800;
-  }
-  
-  .left-side p {
-    margin: 24px 0;
-  }
-  
-  .left-side ul li {
-    font-size: 16px;
+}
+
+.left-side ul li {
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 26px;
     margin-right: 20px;
     margin-bottom: 16px;
     color: rgba(19, 19, 24, 0.7);
-  }
-  .primary-btn {
-    outline: 0;
-    border: 0;
+}
+
+.primary-btn {
+
     color: #fff;
-    cursor: pointer;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 500;
+    margin-top: 32px;
     padding: 15px 36px;
     border-radius: 8px;
-    transition: all 0.2s;
-    background: #ff5400;}
+    background: #ff5400;
+    border: none;
+}
 
 
 /* Mobile Screen style */
 @media only screen and (max-width: 600px) {
-    * {
-        body {
-            margin: 0;
-
-        }
+    header ,main{
+        margin: 0 24px;
     }
 
     .nav-list {
@@ -185,60 +168,55 @@ header {}
         display: block;
     }
 
-    .logo-img {
-        width: 28px;
-    }
-
     .logo-text {
-        font-size: 21.543px;
-        margin-left: 10px;
+        font-size: 1.3rem;
     }
 
-    .header-banner,
-    nav {
-        width: 335px;
-    
-
+    .header-banner-container {
+        padding: 32px 0;
     }
 
     .banner-heading h3 {
-        font-size: 22px;
-        margin-top: 10px;
+        font-size: 2rem;
+        margin-bottom: 8px;
     }
 
     .banner-heading p {
-    
-        font-size: 14px;
-
+        padding: 8px;
+        font-size: 1rem;
+        margin-bottom: 0px;
     }
 
     .select-container {
         flex-direction: column;
-        /* padding: 16px; */
-        gap: 10px;
-        margin: 0;
-
+        margin: 24px;
+        gap: 16px;
     }
-
-    .banner-heading h3 {
-        margin: 0;
-        
-    }
-    .banner-heading p{
-        margin-top:8px;
-        margin-bottom: 32px;
-    }
-
+    
     .select-card {
-        width: 225px;
-        height: 52px;
+        padding: 10px;
+        width: 90%;
     }
-    .header-banner-container {
-        padding: 32px;
-    }
+    
     .our-popular-section{
-        gap: 22px;
-    padding: 40px;
-    flex-direction: column;
+        gap: 25px;
+        flex-direction: column;
+    }
+    
+    .right-side img {
+        width: 100%;
+    
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    
+    }
+    
+    .section-text {
+        font-size: 1rem;
+    
     }
 }
+
+
