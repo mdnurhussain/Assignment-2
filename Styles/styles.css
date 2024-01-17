@@ -204,6 +204,196 @@
     grid-column: 6 / span 7;
   }
 
+  /* ======== Why Choose Us section design start ======== */
+.choose-us-section {
+    margin: 100px auto;
+  }
+  
+  .choose-us-section h2 {
+    margin: 0;
+  }
+  
+  .box-container {
+    gap: 24px;
+    display: flex;
+    margin-top: 48px;
+    align-items: center;
+    margin-bottom: 24px;
+    justify-content: space-between;
+  }
+  
+  .box {
+    width: 573px;
+    padding: 34px;
+    border-radius: 16px;
+    background: rgba(251, 181, 99, 0.05);
+    border: 1px solid rgba(251, 181, 99, 0.2);
+  }
+  
+  .box-three {
+    margin: 0 auto;
+  }
+  
+  .box h3 {
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
+
+  /* ======== News letter section design start ======== */
+.news-letter-section {
+    gap: 30px;
+    display: flex;
+    margin: 100px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .form-container {
+    width: 45%;
+  }
+  
+  .img-content {
+    width: 65%;
+    margin-bottom: -125px;
+  }
+  
+  .img-content img {
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .save-up {
+    width: 324px;
+    height: 120px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+    background: #ff5400;
+    bottom: 174px;
+    left: 336px;
+    transform: rotate(-19.628deg);
+  }
+  
+  .tx-w {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  .sv-70 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  
+  .form-container {
+    padding: 34px;
+    border-radius: 16px;
+    border: 1px solid #ff5400;
+  }
+  
+  .form-container h3 {
+    font-size: 24px;
+    color: #131318;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+  
+  .form-container hr {
+    margin: 24px 0;
+  }
+  
+  form,
+  .in-t {
+    width: 393px;
+    display: block;
+    margin-bottom: 16px;
+  }
+  
+  .in-t {
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 20px;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.3);
+    background: rgba(19, 19, 24, 0.05);
+  }
+  
+  .sub-btn {
+    border: 0;
+    width: 393px;
+    color: #fff;
+    display: block;
+    padding: 16px 0;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background: #ff5400;
+  }
+  
+  .sub-btn:hover {
+    background: #ff6d24;
+  }
+  /* ======== Footer section design start ======== */
+.footer-section {
+    background: rgba(19, 19, 24, 0.05);
+    padding: 110px;
+    text-align: center;
+  }
+  
+  .footer-logo {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .brand-logo {
+    width: 40px;
+  }
+  
+  .logo-h3 {
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  
+  .footer-description {
+    width: 769px;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 34px;
+  }
+  
+  .social-icon {
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+    font-size: 24px;
+  
+    margin: 0 auto;
+  }
+  
+  .social-icon i:hover {
+    transition: all 0.3s;
+    color: #ff5400;
+  }
+  
+  .footer-section hr {
+    margin: 50px auto;
+    width: 872px;
+  }
 
 /* Mobile Screen style */
 @media only screen and (max-width: 600px) {
